@@ -334,13 +334,17 @@ nav ul li a:hover::after{
     text-align: center;
     margin-top: 10px;
 }
-#social-test{
-    .li{
-        width: 140px;
-        height: 140px;
-    }
-    
-}
+
+      .social {
+    justify-content: space-between; /* Distribute space evenly */
+  }
+  
+  .social li {
+    width: calc(25% ); /* Four boxes in one line, minus margin */
+    margin: 0; /* Adjust margin for spacing */
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }
 
@@ -360,6 +364,16 @@ nav ul li a:hover::after{
     .work-list {
         margin-left: 0;
     }
+    .social {
+    justify-content: space-between; /* Distribute space evenly */
+  }
+  
+  .social li {
+    width: calc(25% ); /* Four boxes in one line, minus margin */
+    margin: 0; /* Adjust margin for spacing */
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -379,6 +393,16 @@ nav ul li a:hover::after{
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 30px;
     }
+    .social {
+    justify-content: space-between; /* Distribute space evenly */
+  }
+  
+  .social li {
+    width: calc(25% ); /* Four boxes in one line, minus margin */
+    margin: 0; /* Adjust margin for spacing */
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 670px) {
@@ -407,4 +431,14 @@ nav ul li a:hover::after{
         flex-direction: column;
         margin-left: 0;
     }
+    .social {
+    justify-content: space-between; /* Distribute space evenly */
+  }
+  
+  .social li {
+    width: calc(25% ); /* Four boxes in one line, minus margin */
+    margin: 0; /* Adjust margin for spacing */
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
