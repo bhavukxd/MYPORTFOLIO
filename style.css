@@ -324,6 +324,24 @@ nav ul li a:hover::after{
     .sub-title {
         font-size: 64px;
     }
+    #header{
+        background-image: none;
+        text-align: center;
+        
+    }
+
+#about{
+    text-align: center;
+    margin-top: 10px;
+}
+#social-test{
+    .li{
+        width: 140px;
+        height: 140px;
+    }
+    
+}
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -366,17 +384,16 @@ nav ul li a:hover::after{
 @media only screen and (max-width: 670px) {
     #header {
         background-image: url(phone.png);
+
     }
 
     #header img {
-        background-size: cover;
-        background-position: center;
+        background-size:auto;
+        background-position: left;
+
     }
 
-    .nav1 {
-        display: none;
-    }
-
+    
     .header-text {
         margin-left: 0%;
     }
