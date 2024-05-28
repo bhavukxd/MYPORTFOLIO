@@ -312,3 +312,82 @@ nav ul li a:hover::after{
     color: #fff;
     text-decoration: dashed;
   }
+  @media only screen and (max-width: 1200px) {
+    .header-text {
+        margin-left: 100px;
+    }
+
+    .header-text h1 {
+        font-size: 50px;
+    }
+
+    .sub-title {
+        font-size: 64px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .header-text {
+        margin-left: 50px;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .sub-title {
+        font-size: 54px;
+    }
+
+    .work-list {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-text {
+        margin-left: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .sub-title {
+        font-size: 44px;
+    }
+
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    #header {
+        background-image: url(phone.png);
+    }
+
+    #header img {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .nav1 {
+        display: none;
+    }
+
+    .header-text {
+        margin-left: 0%;
+    }
+
+    .header-text h1,
+    .sub {
+        font-size: 20px;
+    }
+
+    .work-list {
+        flex-direction: column;
+        margin-left: 0;
+    }
+}
